@@ -18,14 +18,28 @@ defaults:
 
 projects:
   sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
+  #sort_by: stars
+    #- pushed
   limit: 20
+  include:
+    - name: now-deployment
+      full_name: amondnet/now-deployment
+    - name: openapi-generator
+      full_name:  OpenAPITools/openapi-generator
+    - name: flutter_kakao_login
+      full_name: JosephNK/flutter_kakao_login
+    - name: mockk
+      full_name: mockk/mockk
+    - name: maxwell
+      full_name: zendesk/maxwell
   exclude:
     archived: false
     forks: false
     projects:
+      - now-deployment
+      - openapi-generator
+      - flutter_kakao_login
+      - mockk
       - test-a
       - amondnet.github.io
       - dart-json-mapper
